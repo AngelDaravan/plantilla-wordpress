@@ -28,5 +28,12 @@
 		</div> <!-- contenido -->	
 			<?php get_sidebar(); ?>
 	</div><!-- cuerpo -->
-
+	<script src="<?php bloginfo('template_directory') ?>/js/jquery.min.js" type="text/javascript">
+		$.fn.vscroll = function(){
+			$(window).scroll(function(){
+				var posicion = $(window).scrollTop();
+				console.log(posicion);
+				}
+			)};
+	</script>
 	<?php get_footer(); ?>
