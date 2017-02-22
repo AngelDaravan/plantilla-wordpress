@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-
+	<div id="mi_portada">
+		<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+	</div>
 	<div id="cuerpo" class="w3-container w3-card-8"> 
 		<div id="contenido" class="w3-col l9">
 		<?php query_posts("paged=$paged"); ?>
